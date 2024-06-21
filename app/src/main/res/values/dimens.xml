@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margin around the floating action button in CatalogActivity -->
+    <dimen name="fab_margin">32dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!-- Image margin value used throughout the app -->
+    <dimen name="image_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

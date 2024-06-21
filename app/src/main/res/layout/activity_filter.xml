@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filtrar_mensaje"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/filter_motherboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/motherboard"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/filter_procesador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/procesador"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/filter_ram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/ram"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/filter_ram_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/number_operators"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/filter_almacenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/almacenamiento"
+        android:textColorHint="#757575"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/filter_almacenamiento_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/number_operators"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/filter_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/video"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/filter_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/scanner"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/filter_impresoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/impresoras"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/apply_filters_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:minHeight="48dp"
+        android:text="@string/boton_aplicar_filtros" />
+
+</LinearLayout>

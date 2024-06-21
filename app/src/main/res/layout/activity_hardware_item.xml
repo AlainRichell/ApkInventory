@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- card view to display info -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <!-- this relative layout contains all info -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- First row: HWID -->
+            <TextView
+                android:id="@+id/hardware_hwid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#2B3D4D"/>
+
+            <!-- Second row: Motherboard -->
+            <TextView
+                android:id="@+id/hardware_motherboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_hwid"/>
+
+            <!-- Third row: Procesador -->
+            <TextView
+                android:id="@+id/hardware_procesador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_motherboard"/>
+
+            <!-- Fourth row: RAM -->
+            <TextView
+                android:id="@+id/hardware_ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_procesador"/>
+
+            <!-- Fifth row: Almacenamiento -->
+            <TextView
+                android:id="@+id/hardware_almacenamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_ram"/>
+
+            <!-- Sixth row: Video -->
+            <TextView
+                android:id="@+id/hardware_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_almacenamiento"/>
+
+            <!-- Seventh row: Scanner -->
+            <TextView
+                android:id="@+id/hardware_scanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_video"/>
+
+            <!-- Eighth row: Impresoras -->
+            <TextView
+                android:id="@+id/hardware_impresoras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#2B3D4D"
+                android:layout_below="@id/hardware_scanner"/>
+
+            <!-- Item Number -->
+            <TextView
+                android:id="@+id/item_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#AEB6BD"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
